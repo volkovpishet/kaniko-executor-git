@@ -1,0 +1,7 @@
+version: '3'
+services:
+  kaniko-executor-git:
+    image: volkovpishet/kaniko-executor-git:${TAG}
+    build:
+      context: .
+    tty: true
